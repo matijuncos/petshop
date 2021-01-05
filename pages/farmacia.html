@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/faviconio/favicon-16x16.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <title>Farmacia | Franco - Petshop</title>
+</head>
+
+<body>
+    <div class="overflow">
+        <header>
+            <a href="../index.html">
+                <div class="logoContainer">
+                    <img src="../assets/images/logoeditado2.png" alt="" class="logov2">
+
+                </div>
+            </a>
+            <nav>
+                <div class="navBar">
+                    <a href="../index.html">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="./juguetes.html">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Juguetes</span>
+                    </a>
+                    <a href="#" class="current">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <span>Farmacia</span>
+                    </a>
+                    <a href="./contacto.html">
+                        <i class="fas fa-id-card-alt"></i>
+                        <span>Contacto</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="burger" id="burger">
+                <div class="line" id="line"> </div>
+                <div class="line2" id="line2"></div>
+                <div class="line3" id="line3"></div>
+            </div>
+        </header>
+
+        <div class="banner2">
+            <i class="fas fa-shopping-cart newCart" id='checkout'></i><span class="numberOfItems" id="counter">0</span>
+            <h1>Franco - Petshop</h1>
+            <h3>¡Lo mejor para tu mascota!</h3>
+        </div>
+        <section class="catalogo">
+            <div class="marketHeader">
+                <i class="fas fa-bone"></i>
+                <h2>¡La salud es lo primero!</h2>
+                <p>Bienvenido a nuestro sector de productos farmaceuticos para tu mascota.</p>
+                <p>¡Con los productos que ofrecemos tendrás la tranquilidad de que tu mascota estará fuerte y sana!</p>
+                <i class="fas fa-bone"></i>
+            </div>
+            <div class="cardContainer" id="cardContainer">
+                <!-- Acá van todas las tarjetas -->
+            </div>
+            <!-- The Modal -->
+            <div id="checkoutModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Gracias por tu compra!</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped table-hover my-3">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio($)</th>
+                                    <th>Cantidad</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody id=test>
+
+                            </tbody>
+                        </table>
+                        <button class="btn btn-primary" id="purchase">Finalizar compra</button>
+                        <button class="btn btn-danger">Vaciar Carrito</button>
+                        <h4 id="thanks" class="thanks"></h4>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://wa.link/ox92ff" target="_blank"><img src="../assets/images/whatsapp.png" alt="" srcset=""
+                    class="whatsApp"></a>
+
+        </section>
+        <section class="medios">
+            <h2>Formas de pago</h2>
+            <div class="cardsimg">
+                <img src="../assets/images/formas de pago/logos_amex.ed4e7028.svg" alt="" srcset="">
+                <img src="../assets/images/formas de pago/logos_cabal debito.e2f403fb.svg" alt="" srcset="">
+                <img src="../assets/images/formas de pago/logos_maestro.56f97b0e.svg" alt="" srcset="">
+                <img src="../assets/images/formas de pago/logos_master.60fdbcf5.svg" alt="" srcset="">
+                <img src="../assets/images/formas de pago/logos_naranja.6f60602d.svg" alt="" srcset="">
+                <img src="../assets/images/formas de pago/logos_visa debito.b13f2f0f.svg" alt="" srcset="">
+                <img src="../assets/images/formas de pago/logos_visa.062f66a8.svg" alt="" srcset="">
+                <img src="../assets/images/formas de pago/todo-pago_1.svg" alt="" srcset="">
+            </div>
+        </section>
+        <section class="badges">
+            <h2>Porque amamos a los animales, </h2>
+            <h2>te ofrecemos excelencia en calidad y atención.</h2>
+            <div class="badgesImg">
+                <img src="../assets/images/badge.jpg" alt="" srcset="">
+                <img src="../assets/images/badge2.jpg" alt="" srcset="">
+
+            </div>
+        </section>
+        <footer>
+            <div class="footerTables">
+                <div>
+                    <h5>Servicios</h5>
+                    <a href="./juguetes.html"><i class="fas fa-bone"></i>Jugueteria</a>
+                    <a href="#"><i class="fas fa-bone"></i>Farmacia</a>
+                    <a><i class="fas fa-bone"></i>Peluqueria(¡Proximamente!)</a>
+                </div>
+                <div>
+                    <h5>Horarios</h5>
+                    <p><i class="fas fa-bone"></i>Lunes a sábados</p>
+                    <p><i class="fas fa-bone"></i>9am - 18pm</p>
+                </div>
+                <div>
+                    <h5>Ubicación</h5>
+                    <p><i class="fas fa-bone"></i>Río de Janeiro 300</p>
+                    <p><i class="fas fa-bone"></i>Caballito</p>
+                    <p><i class="fas fa-bone"></i>CABA</p>
+                </div>
+                <div>
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-bone"></i>4759-6548</p>
+                    <div class="redes">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+
+                    </div>
+                </div>
+
+            </div>
+            <p>© 2020 Franco Petshop. Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+
+</body>
+
+</html>
