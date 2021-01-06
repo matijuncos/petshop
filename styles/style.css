@@ -931,6 +931,7 @@ small {
 
 .modal-header h2 {
   margin: 1vh;
+  font-size: 24px;
 }
 .modal-body {
   padding: 2px 16px 16px 16px;
@@ -962,6 +963,7 @@ small {
 .fa-trash {
   color: rgb(182, 22, 22);
   cursor: pointer;
+  font-size: 25px;
 }
 .fa-trash:hover {
   transform: scale(1.1);
