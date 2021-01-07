@@ -103,10 +103,14 @@ function buy(){  //Acá manejo estilos del boton de comprar.
         buyBtn[i].addEventListener('click', (e)=>{
             e.target.innerText = 'done'
             e.target.parentElement.classList.add('done')
-            addItemtoCart(e)
+            const numberinput = e.target.parentElement.parentElement.parentElement.firstElementChild.children[1].children[1]
+/*             numberinput.setAttribute('disabled', true)
+            numberinput.classList.add('disabled')
+ */            addItemtoCart(e)
         })
     }
 }   
+
 
 function addItemtoCart(e){ //En esta funcion voy a hacer dom traversing para buscar el nombre y precio del producto y pushearlos a un array que se llama cartArray, Obviamente la invoco al hacer click (linea 73)
     const productName = e.target.parentElement.parentElement.firstElementChild.firstElementChild.innerText

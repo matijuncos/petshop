@@ -94,14 +94,17 @@ nav {
   text-align: left;
 }
 .carousel-caption h1 {
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   font-weight: 800;
   text-shadow: 1px 1px 5px black;
+  font-family: "Indie Flower", cursive;
 }
 .carousel-caption h3 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   text-shadow: 1px 1px 5px black;
   z-index: 3;
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
 }
 .TopSection {
   position: relative;
@@ -358,7 +361,7 @@ iframe {
 }
 .banner h1,
 .banner2 h1 {
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   font-weight: 800;
   font-family: sans-serif;
   text-shadow: 1px 1px 5px black;
@@ -371,7 +374,7 @@ iframe {
 .banner2 h3 {
   font-family: sans-serif;
   color: white;
-  font-size: 3.9rem;
+  font-size: 3rem;
   text-shadow: 1px 1px 5px black;
 }
 .banner {
@@ -640,6 +643,9 @@ section h2 {
   height: 100%;
   padding: 2rem 0;
 }
+.disabled {
+  background-color: rgba(128, 128, 128, 0.61);
+}
 .material-icons {
   color: whitesmoke;
   font-size: 35px;
@@ -733,7 +739,7 @@ footer p {
 .formContainer {
   display: flex;
   margin: 4vh auto;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 form {
   display: flex;
@@ -743,10 +749,14 @@ form {
 }
 .form .formLeft {
   width: 40%;
+  margin: 0 2vw;
 }
+
 .formLeft img {
   object-fit: contain;
   width: 70%;
+  border-radius: 5%;
+  margin-right: 5rem;
 }
 form input,
 form div input,
@@ -1233,7 +1243,7 @@ table {
     transform: translateX(100%);
     z-index: 3;
     transition: 0.5s all ease-in-out;
-    background-color: #f35719d2;
+    background-color: #f35719e8;
   }
   .active {
     transform: translateX(0%);
@@ -1241,12 +1251,15 @@ table {
   .navBar {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .navBar a {
     display: block;
+    width: 100%;
   }
   .current {
     border: none;
+    border-left: solid 5px white;
   }
   .burger {
     display: block;
